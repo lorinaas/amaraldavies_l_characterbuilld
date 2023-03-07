@@ -4,68 +4,249 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <title>Borderlands Character Build</title>
 </head>
 <body>
 
     <header>
         <h1 class="hidden">All About Psychos</h1>
-        <img src="images/logo_borderlands.png" alt="borderlands logo" id="main logo">
+        <img src="images/logo_borderlands_colour.png" alt="borderlands logo" id="main_logo">
     </header>
 
     <main>
-        <nav>
-            <ul>
+        <nav id="characters_nav">
+            <ul class="characters">
                 <li>
+                    <a href="#lightbox" id="freezing_psycho">
+                        <div class="sprite"></div>
+                        <div class="bumper"></div>
                         <h5>Freezing Psycho</h5> 
                     </a>
-
                 </li>
 
                 <li>
-                         <h5>Small Psycho</h5> 
+                    <a href="#lightbox2">
+                        <div class="sprite" id="small_psycho"></div>
+                        <div class="bumper"></div>
+                        <h5>Small Psycho</h5> 
                     </a>
-        
                 </li>
 
                 <li>
+                    <a href="#lightbox3">
+                        <div class="sprite" id="psycho"></div>
+                        <div class="bumper"></div>
                         <h5>Psycho</h5> 
                     </a>
-                
                 </li>
 
                 <li>
-                        <h5>Female Psycho</h5> 
-                    </a>
-                
+                    <a href="#lightbox4">
+                        <div class="sprite" id="female_psycho"></div>
+                        <div class="bumper"></div>
+                        <h5>Female Psycho</h5>
+                    </a>   
                 </li>
 
                 <li>
+                    <a href="#lightbox5">
+                        <div class="sprite" id="infected_psycho"></div>
+                        <div class="bumper"></div>
                         <h5>Infected Psycho</h5> 
-                    </a>
-                
+                </a>
                 </li>
 
                 <li>
+                    <a href="#lightbox6">
+                        <div class="sprite" id="burning_psycho"></div>
+                        <div class="bumper"></div>
                         <h5>Burning Psycho</h5> 
-                    </a>
-                
+                </a> 
                 </li>
-            
-            </ul>
-
+             </ul>
         </nav>
 
         <article>
-            <h3>Choose your Psycho!</h3>
+            <h3>Who would win in a fight?</h3>
             <p>Use your mouse to hover / click to discover more about the different types of Psychos.</p>
         </article>
     </main>
 
-    <footer>
+    <footer class="sticky_footer">
         <h3>All Images &copy; 2K Games and &copy; Gearbox Software</h3>
+        
     </footer>
-</body>
-<html>
 
-    
+ <!-- lightbox goes here -->
+ <section class="lightbox" id="lightbox">
+    <!-- close button -->
+    <a href="" class="lightbox_close">x</a>
+
+    <article>
+        <h3 class="lb_heading">Freezing Psycho</h3>
+
+        <p class="lb_text">
+            Character Type: Enemy<br>
+            Gender: Male<br>
+            Race: Human mutant<br>
+            Group Affiliations: Bandits<br>
+            Occurance: Rare<br>
+        </p>
+
+        <p class="lb_text">
+            Freezing Psychos are enemies encountered in Borderlands 2 and are easily identified by fur hats they wear. In Borderlands 2 they are only encountered during the The Iceman Cometh optional mission.
+        </p>
+
+        <p class="lb_text">
+            Quotes:<br>
+            "I AM IMMORTAL!"<br>
+            "Inconceivable!" (taking damage)<br>
+            "Pluto's not a planet!"<br>
+        </p>
+    </article>
+</section>
+
+ <section class="lightbox" id="lightbox2">
+    <!-- close button -->
+    <a href="" class="lightbox_close">x</a>
+
+    <article>
+        <h3 class="lb_heading">Small Psycho</h3>
+
+        <p class="lb_text">
+            Character Type: Enemy<br>
+            Gender: Male<br>
+            Race: Human mutant<br>
+            Group Affiliations: Bandits<br>
+            Occurance: Common<br>
+        </p>
+
+        <p class="lb_text">
+            Small Psychos are units of psycho enemies that spawn quite frequently in areas populated by bandits. They generally have less health than their larger cousins, but may be more difficult to hit, due to their smaller stature. They wear cargo pants and occasionally sports rudimentary armor or tattoos, and are first encountered in Southern Shelf during the Best Minion Ever mission.
+            Small Psychos charge to get into melee range with their intended victims, but are also capable of zig-zagging through terrain or performing combat rolls to avoid weapon fire. To reach their targets, they also have a leap attack that can have them whipping through the air in surprisingly long jumps. When within melee range they use the buzz-axe they carry to perform an overhand strike which is typically with a double swing pattern, followed by a pause after the second attack. If they can't find a path to get within leaping range, they stop and attack by throwing buzz-axes at their targets. Buzz-axes always respawn after being thrown, enabling the Small Psycho to continue attacking. They will not be deterred by attacks from Vault Hunters and will continue to melee attack their target at close range until they are either killed or damaged to near death.
+        </p>
+
+        <p class="lb_text">
+            Quotes:<br>
+            "You're my new best friend! Now you DIE! Then I'm alone! Why would I do that?!"<br>
+            "No no don't do that!" (taking damage)<br>
+            "OW! OW! OH JESUS! FAIRIES!" (when killed)<br>
+        </p>
+
+    </article>
+</section>
+
+<section class="lightbox" id="lightbox3">
+    <!-- close button -->
+    <a href="" class="lightbox_close">x</a>
+
+    <article>
+        <h3 class="lb_heading">Psycho</h3>
+
+        <p class="lb_text">
+            Character Type: Enemy<br>
+            Gender: Male<br>
+            Race: Human mutant<br>
+            Group Affiliations: Bandits<br>
+            Occurance: Common<br>
+        </p>
+
+        <p class="lb_text">
+            Psychos are typically found among the ranks of the bandits that plague Pandora. They are known to act as the close-range counterparts to their more lucid, gun-waving brethren and will rush their targets while screaming all manner of insane comments. Psychos run very swiftly, vaulting over low obstacles to get into melee range with their intended victims. They often zigzag in their run to avoid weapons fire. Wielding a "buzz axe", they deal extremely high damage to anything they're fighting against, easily capable of killing Skags and Spiderants with ease whereas other bandits would have trouble killing them. Psychos attack with a simple slash, which can be followed up with a second swing, after which the psycho pauses briefly. Hitting a psycho on the feet causes them to trip and fall back giving time to inflict extra damage on the psycho until it recovers.
+        </p>
+
+        <p class="lb_text">
+            Quotes:<br>
+            "I'm gonna beat you to life!"<br>
+            "You can't kill me! I'm already dead tomorrow!"<br>
+            "I can hear with my teeth!"<br>
+        </p>
+
+    </article>
+</section>
+
+<section class="lightbox" id="lightbox4">
+    <!-- close button -->
+    <a href="" class="lightbox_close">x</a>
+
+    <article>
+        <h3 class="lb_heading">Female Psycho</h3>
+
+        <p class="lb_text">
+            Character Type: Enemy<br>
+            Gender: Female<br>
+            Race: Human mutant<br>
+            Group Affiliations: Bandits<br>
+            Occurance: Uncommon<br>
+        </p>
+
+        <p class="lb_text">
+            Psychos are typically found among the ranks of the bandits that plague Pandora. They are known to act as the close-range counterparts to their more lucid, gun-waving brethren and will rush their targets while screaming all manner of insane comments. Psychos run very swiftly, vaulting over low obstacles to get into melee range with their intended victims. They often zigzag in their run to avoid weapons fire. Wielding a "buzz axe", they deal extremely high damage to anything they're fighting against, easily capable of killing Skags and Spiderants with ease whereas other bandits would have trouble killing them. Psychos attack with a simple slash, which can be followed up with a second swing, after which the psycho pauses briefly. Hitting a psycho on the feet causes them to trip and fall back giving time to inflict extra damage on the psycho until it recovers.
+        </p>
+
+        <p class="lb_text">
+            Quotes:<br>
+            "I wonder what your face, would look like on mine."<br>
+            "You remind me of my mother... I ate my mother."<br>
+            "I'm gonna rip off your arm and beat your baby with it!<br>
+        </p>  
+    </article>
+</section>
+
+<section class="lightbox" id="lightbox5">
+    <!-- close button -->
+    <a href="" class="lightbox_close">x</a>
+
+    <article>
+        <h3 class="lb_heading">Infected Psycho</h3>
+
+        <p class="lb_text">
+            Character Type: Enemy<br>
+            Gender: Male<br>
+            Race: Human mutant<br>
+            Group Affiliations: Bandits<br>
+            Occurance: Rare<br>
+        </p>
+
+        <p class="lb_text">
+            Infected Psychos are exclusively melee attackers and will try to close in on their intended victims as fast as they can in a direct path. Melee strike of their spikes can deal a large chunk of damage. Because of the mutated plant growth on their bodies, Infected Psychos are fairly slow and can be easily kept at a distance while firing at them.</p>
+
+         <p class="lb_text">
+            Quotes:<br>
+            "I have too many eyes."<br>
+            "Let's agree to disagree!"<br>
+            "Bring me a bucket, and I'll show you a bucket!"<br>
+        </p>  
+    </article>
+</section>
+
+<section class="lightbox" id="lightbox6">
+    <!-- close button -->
+    <a href="" class="lightbox_close">x</a>
+
+    <article>
+        <h3 class="lb_heading">Burning Psycho</h3>
+
+        <p class="lb_text">
+            Character Type: Enemy<br>
+            Gender: Male<br>
+            Race: Human mutant<br>
+            Group Affiliations: Bandits<br>
+            Occurance: Uncommon<br>
+        </p>
+
+        <p class="lb_text">
+            Some psychos have adopted a pyromaniac bent and have become known as "Burning Psychos". These psychos will ignite themselves when engaged, rush into close proximity for melee attacks, and deal Incendiary contact damage. Their attacks also have a chance to set things on fire. Burning Psychos are distinguishable by their bird-like outfit, including a skull mask with feathers, and the flames that they have leaping off them. Like other Psychos except the Badass version, they will throw their weapon at targets at range. Unlike normal Psychos or Small Psychos, they do not make suicide grenade attacks. They make the same sound as normal psychos. In addition to swiping with their flaming axes, Burning Psychos can breathe fire at targets as well. 
+        </p>
+
+        <p class="lb_text">
+            Quotes:<br>
+            "Why don't you come over here, I got a little present for you!"<br>
+            "My new concept is warm to table."<br>
+            "Mommy where are you?!"<br>
+        </p>
+    </article>
+</section>
+</body>
+</html>

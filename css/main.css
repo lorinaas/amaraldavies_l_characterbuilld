@@ -1,0 +1,214 @@
+/* global rules */
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+@font-face {
+    font-family: 'Compacta';
+    src: url('../fonts/Compacta\ Bold\ Plain\ Regular.otf');
+}
+
+body {
+        background-color: #313131;
+        background-image: url('../images/background.jpg');
+        background-size: cover;
+        color: white;
+        background-blend-mode: multiply;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+}
+
+/* main header rules */
+
+header {
+    background-color: #edc800;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#main_logo {padding-top: 15px;
+padding-bottom: 10px;
+}
+
+
+/* main rules */
+
+#characters_nav {
+    text-align: center;
+    background: none;
+    margin-top: 55px;
+}
+
+
+.characters li { 
+    position: relative;
+    display: inline-block;
+    height: 220px;
+    margin: 10px 8px;
+
+    background-color: black;
+
+    text-align: left;
+    cursor: pointer;
+
+}
+
+.characters li h5 {
+    position: relative;
+    color: white;
+    padding: 22px 8px;
+    z-index: 500;
+    font-size: 25px;
+    font-family: Compacta, sans-serif;
+
+}
+
+.characters li a { 
+    text-decoration: none; 
+    text-align: center;
+}
+
+.bumper {
+    width: 100%;
+    height: 6px;
+    background-color: #edc800;
+
+    transition: height 0.2s ease;
+
+    position: absolute;
+}
+
+
+.characters li:hover .bumper { height: 70px; }
+
+article { padding: 20px; }
+
+/* select the h3 tag inside the article tag on the page */
+/* a selector followed by a space and then ANOTHER selector gets a reference to the parent element and then the child element or elements inside of it */
+article h3  {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+/* select the p tag inside the article tag on the page */
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    
+    background-image: url('../images/psycho_sprites.png');
+}
+
+#small_psycho { background-position: -150px 0; }
+#psycho { background-position: -300px 0; }
+#female_psycho { background-position: -450px 0; }
+#infected_psycho { background-position: -600px 0; }
+#burning_psycho { background-position: -750px 0 ;}
+
+.sprite:hover { background-position-y: -150px !important; }
+
+/* footer rules here */
+footer {
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+
+    height: 80px;
+    background-color: black;
+}
+
+/* lightbox rules here */
+
+.lightbox { 
+    width: 100vw; /* vw = viewport width => screen width */
+    height: 100vh; /* vh = viewport height => screen height */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/freezing_psycho_bg.png');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; /* 55% of the viewport height */
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+#lightbox2 { background-image: url('../images/small_psycho_bg.png'); }
+#lightbox3 { background-image: url('../images/psycho_bg.png'); }
+#lightbox4 { background-image: url('../images/female_psycho_bg.png'); }
+#lightbox5 { background-image: url('../images/infected_psycho_bg.png'); }
+#lightbox6 { background-image: url('../images/burning_psycho_bg.png'); }
+
+
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { color: #edc800; }
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_heading { font-family: 'Compacta';
+color: #edc800;
+font-size: 30pt;
+}
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+/* turn the lightbox on using the :target pseudo selector */
+.lightbox:target { display: block; }
+
+
+
